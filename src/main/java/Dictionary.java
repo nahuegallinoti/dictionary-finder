@@ -55,14 +55,14 @@ public class Dictionary {
      * @return String list with all the possible word combinations based on the given input
      */
     public Collection<String> isEnglishWord(String input) {
-        ArrayList<String> matches = new ArrayList<String>();
+        ArrayList<String> matches = new ArrayList<>();
 
         input = input.toLowerCase();
 
         //for each word in dictionary
         for (String word : dictionary) {
 
-            Boolean match = true;
+            boolean match = true;
 
             //for each character in the word of dictionary
             for (char ch : word.toCharArray()) {
@@ -85,6 +85,7 @@ public class Dictionary {
 
         return matches;
     }
+
 
     /**
      * Return new list without duplicates
