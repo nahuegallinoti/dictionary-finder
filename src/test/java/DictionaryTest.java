@@ -54,7 +54,7 @@ public class DictionaryTest {
         dictionary.addWords(words);
 
         System.out.println("-------------- Dictionary content --------------" + dictionary.getDictionary());
-        Assert.assertTrue(dictionary.getDictionary().size() == 6);
+        Assert.assertTrue(dictionary.getDictionary().size() == 5);
 
     }
 
